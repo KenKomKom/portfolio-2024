@@ -99,8 +99,11 @@ export const Header = () => {
         ABOUT ME
       </h1>
       <p className={`mt-8  text-center w-full text-[1.5rem] ${poppins.className}`}>
-        I am somewhat of an  <span className="font-bold md:text-4xl text-[#ED4E4E]">Artist</span><br/>
-        and somewhat of a <span className="font-bold md:text-4xl text-[#ED4E4E]">Programmer</span> myself
+        I am a  <span className="font-bold md:text-4xl text-[#ED4E4E]">Programmer</span><br/>
+        and somewhat of a <span className="font-bold md:text-4xl text-[#ED4E4E]">Artist</span> myself
+      </p>
+      <p className={`mt-2 text-center w-full text-[1rem] ${poppins.className}`}>
+        Learned : <span className="font-bold text-[#ED4E4E]">Django, Springboot, NextJs, PostgreSQL, GDScript, Octave</span>
       </p>
       <p className=" mt-8  text-center w-full text-[1rem]">
         currently studying <span className="font-bold md:text-1xl">computer science </span>in<br/>

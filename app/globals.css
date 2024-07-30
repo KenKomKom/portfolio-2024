@@ -34,3 +34,9 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .pixelated{
+      image-rendering: pixelated;
+  }
+}

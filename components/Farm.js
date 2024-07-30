@@ -70,15 +70,21 @@ const Farm = ({currentState, handle_change}) => {
   return (
     <div ref={elementRef} id="Extras" className='h-fit flex-col items-end justify-end w-full pt-20 bg-slate-200'>
         <section id="field" className='w-screen flex h-20'>
-            <Barn spawnFunc={spawn}/>
+            <Barn spawnFunc={spawn} counter={count}/>
             <Animal id={"animal_1"} spawned={spawned1}/>
             <Animal id={"animal_2"} spawned={spawned2}/>
             <Animal id={"animal_3"} spawned={spawned3}/>
             <Animal id={"animal_4"} spawned={spawned4}/>
             <Animal id={"animal_5"} spawned={spawned5}/>
         </section>
-        <footer className={`bg-slate-900 h-32 w-screen text-black relative ${poppins.className}`}>
-            <div className='absolute bottom-0 text-center w-screen flex gap-10 justify-center bg-slate-100'>
+        <footer className={`bg-slate-900 h-32  w-screen relative ${poppins.className}`}>
+            <div className={`text-white pl-10 h-full ${poppins.className} pt-3`}>
+                <p className='font-bold'>Where to find me</p>
+                <p>Linkedin: linkedin.com/in/kenichi-komala/</p>
+                <p>Github: /github.com/KenKomKom</p>
+            </div>
+        </footer>
+        <div className='text-black bottom-0 text-center w-screen flex gap-10 justify-center bg-slate-100'>
                 <p>Build with <Image
                                 src="/next.svg"
                                 alt="next Logo"
@@ -90,8 +96,6 @@ const Farm = ({currentState, handle_change}) => {
                 </p>
                 <p>Amplified with AceternityUI</p>  
             </div>
-
-        </footer>
     </div>
   )
 }

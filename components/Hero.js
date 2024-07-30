@@ -38,7 +38,7 @@ const Hero = ({currentState, handle_change}) => {
   return (
     <section ref={elementRef} className={`flex h-screen bg-[#BD3C3C] relative text-white ${jose.className}`}>
     <CanvasRevealEffect
-      animationSpeed={2}
+      animationSpeed={2.5}
       containerClassName="bg-[#320000]"
       colors={[
         [153,41,41],
@@ -60,21 +60,34 @@ const Hero = ({currentState, handle_change}) => {
           clipPath: "polygon(0% 0, 0 0,  70% 100%, 75% 100%)"
         }}
     /> */}
-    <div className='absolute left-[10%] top-[15%] sm:left-[15%] sm:top-[18%] text-[6rem] sm:text-[7rem] md:text-[8rem] lg:text-[9.5rem]'>PO</div>
-    <div className='absolute left-[20%] top-[25%] sm:left-[20%] sm:top-[32%] text-[6rem] sm:text-[7rem] md:text-[8rem] lg:text-[9.5rem]'>RT</div>
-    <div className='absolute right-[25%] top-[35%] sm:right-[20%] sm:top-[28%] text-[6rem] sm:text-[7rem] md:text-[8rem] lg:text-[9.5rem]'>FO</div>
-    <div className='absolute right-[10%] top-[45%] sm:right-[14%] sm:top-[43%] text-[6rem] sm:text-[7rem] md:text-[8rem] lg:text-[9.5rem]'>LIO</div>
-
-    <motion.svg className='absolute w-screen h-screen object-cover bg-[#bc5f5f] z-10'
+    <motion.img className='absolute w-screen h-screen object-cover z-0'
+        src="../../static/images/Illustration2-invert.png"
+        alt=""
         style={{
-          mixBlendMode: "difference",
-          clipPath: "polygon(50% 0, 0 0, 70% 100%, 75% 100%)"
+          clipPath: "polygon(0 0, 0 0, 0 0, 0 0)"
+        }}
+        animate={{
+          clipPath:"polygon(0 0, 100% 0, 100% 100%,0 100%)"
+        }}
+        transition={{delay:1.5, duration:0.2}}
+    />
+    <motion.img className='absolute w-screen h-screen object-cover z-10'
+        src="../../static/images/Illustration2-rill.png"
+        alt=""
+        style={{
+          clipPath: "polygon(50% 0, 0 0, 70% 0%, 75% 0%)"
         }}
         animate={{
           clipPath:"polygon(50% 0, 0 0, 70% 100%, 75% 100%)"
         }}
-        transition={{delay:2, duration:0.2}}
+        transition={{delay:1.6, duration:0.2}}
     />
+
+    <div className='absolute left-[10%] top-[15%] sm:left-[15%] sm:top-[18%] text-[6rem] sm:text-[7rem] md:text-[8rem] lg:text-[9.5rem] z-20'>PO</div>
+    <div className='absolute left-[20%] top-[25%] sm:left-[20%] sm:top-[32%] text-[6rem] sm:text-[7rem] md:text-[8rem] lg:text-[9.5rem] z-20'>RT</div>
+    <div className='absolute right-[25%] top-[35%] sm:right-[20%] sm:top-[28%] text-[6rem] sm:text-[7rem] md:text-[8rem] lg:text-[9.5rem] z-20'>FO</div>
+    <div className='absolute right-[10%] top-[45%] sm:right-[14%] sm:top-[43%] text-[6rem] sm:text-[7rem] md:text-[8rem] lg:text-[9.5rem] z-20'>LIO</div>
+    
     </div>
     
     

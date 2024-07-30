@@ -69,7 +69,7 @@ export const Highlight = ({
         display: "inline",
       }}
       className={cn(
-        `py-2 px-2 rounded-lg bg-gradient-to-r from-red-600 to-red-400 `,
+        `w-full py-2 px-2 rounded-lg bg-gradient-to-r from-red-600 to-red-400 align-middle`,
         className
       )}
     >

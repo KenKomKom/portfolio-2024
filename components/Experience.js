@@ -61,7 +61,7 @@ const Experience = ({currentState, handle_change}) => {
       };
   }, []);
   return (
-    <div ref={elementRef} className='h-[50%] bg-slate-200 overflow-hidden' id="Experience">
+    <div ref={elementRef} className='h-[100%] py-3 bg-slate-200 overflow-hidden' id="Experience">
       <HeroHighlight>
       <motion.h1
         initial={{
@@ -78,7 +78,7 @@ const Experience = ({currentState, handle_change}) => {
         }}
         className=" font-bold leading-relaxed text-center"
       >
-        <Highlight className={`text-white ${jose.className} text-5xl sm:text-6xl `}>
+        <Highlight className={`text-white ${jose.className} text-5xl sm:text-6xl  px-2 text-center align-middle`}>
           My Experiences
         </Highlight>
       </motion.h1>
